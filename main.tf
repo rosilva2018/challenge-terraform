@@ -15,14 +15,26 @@ module "network" {
   #version = "0.1"
 }
 
+/*=== Module AWS EC2
+======*/
+module "servers" {
+  source  = "./servers/ec2"
+  servers = 1
+  #version = "0.1"
+}
+
+/*=== Module AWS SG
+source = "./sg"
+#version = "0.1"
+
 /*====
 Remote State network's s3
 ======*/
 
 terraform {
   backend "s3" {
-    bucket = "tf-challenge-lab-network"
-    key    = "network/terraform.tfstate"
+    bucket = "tf-challenge-lab"
+    key    = "lab/terraform.tfstate"
     region = "sa-east-1"
   }
 }
