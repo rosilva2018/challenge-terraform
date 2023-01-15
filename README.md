@@ -15,6 +15,14 @@ Create a terraform.tfvars with your credentials and default region.
  * terraform plan
  * terraform apply
 
+## Running Modules
+
+ 1. Running module network
+ 2. Running module sg
+ 3. Running module ec2
+
+ [Modules](https://developer.hashicorp.com/terraform/language/modules/syntax)
+
  ### Dependencies
 
 * Terraform.
@@ -55,3 +63,4 @@ Inspiration, code snippets, etc.
 * [Creating Modules](https://www.terraform.io/docs/modules/index.html)
 * [tfenv](https://github.com/tfutils/tfenv)
 * [HashCorp](https://developer.hashicorp.com/terraform/language/settings/backends/s3)
+* [Modules](https://developer.hashicorp.com/terraform/language/modules/syntax)
