@@ -1,4 +1,4 @@
-## challenge sanar
+## Challenge Devops
 
 Create a terraform.tfvars with your credentials and default region.
 
